@@ -11,7 +11,7 @@ import SwiftUI
 struct ScreenRecorderSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScreenRecordingView()
         }
     }
 }

@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2DFBE68329E7E80B00D7B644 /* ScreenRecorderSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE68229E7E80B00D7B644 /* ScreenRecorderSwiftUIApp.swift */; };
-		2DFBE68529E7E80B00D7B644 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE68429E7E80B00D7B644 /* ContentView.swift */; };
+		2DFBE68529E7E80B00D7B644 /* ScreenRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE68429E7E80B00D7B644 /* ScreenRecordingView.swift */; };
 		2DFBE68729E7E80C00D7B644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE68629E7E80C00D7B644 /* Assets.xcassets */; };
 		2DFBE68A29E7E80C00D7B644 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFBE68929E7E80C00D7B644 /* Preview Assets.xcassets */; };
+		2DFBE69329E7F75F00D7B644 /* ScreenRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE69229E7F75F00D7B644 /* ScreenRecorderManager.swift */; };
+		2DFBE69529E8273800D7B644 /* ScreenRecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE69429E8273800D7B644 /* ScreenRecordingViewModel.swift */; };
+		2DFBE69729E832B400D7B644 /* ScreenRecordedShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBE69629E832B400D7B644 /* ScreenRecordedShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DA5AC7A29E838FA00DA7542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2DFBE67F29E7E80B00D7B644 /* ScreenRecorderSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecorderSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFBE68229E7E80B00D7B644 /* ScreenRecorderSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorderSwiftUIApp.swift; sourceTree = "<group>"; };
-		2DFBE68429E7E80B00D7B644 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2DFBE68429E7E80B00D7B644 /* ScreenRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordingView.swift; sourceTree = "<group>"; };
 		2DFBE68629E7E80C00D7B644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DFBE68929E7E80C00D7B644 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DFBE69229E7F75F00D7B644 /* ScreenRecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorderManager.swift; sourceTree = "<group>"; };
+		2DFBE69429E8273800D7B644 /* ScreenRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordingViewModel.swift; sourceTree = "<group>"; };
+		2DFBE69629E832B400D7B644 /* ScreenRecordedShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordedShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		2DFBE68129E7E80B00D7B644 /* ScreenRecorderSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2DA5AC7A29E838FA00DA7542 /* Info.plist */,
+				2DFBE69229E7F75F00D7B644 /* ScreenRecorderManager.swift */,
 				2DFBE68229E7E80B00D7B644 /* ScreenRecorderSwiftUIApp.swift */,
-				2DFBE68429E7E80B00D7B644 /* ContentView.swift */,
+				2DFBE68429E7E80B00D7B644 /* ScreenRecordingView.swift */,
+				2DFBE69429E8273800D7B644 /* ScreenRecordingViewModel.swift */,
+				2DFBE69629E832B400D7B644 /* ScreenRecordedShareSheet.swift */,
 				2DFBE68629E7E80C00D7B644 /* Assets.xcassets */,
 				2DFBE68829E7E80C00D7B644 /* Preview Content */,
 			);
@@ -137,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFBE68529E7E80B00D7B644 /* ContentView.swift in Sources */,
+				2DFBE69729E832B400D7B644 /* ScreenRecordedShareSheet.swift in Sources */,
+				2DFBE69529E8273800D7B644 /* ScreenRecordingViewModel.swift in Sources */,
+				2DFBE68529E7E80B00D7B644 /* ScreenRecordingView.swift in Sources */,
+				2DFBE69329E7F75F00D7B644 /* ScreenRecorderManager.swift in Sources */,
 				2DFBE68329E7E80B00D7B644 /* ScreenRecorderSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +284,9 @@
 				DEVELOPMENT_TEAM = 46YHF3B432;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecorderSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +316,9 @@
 				DEVELOPMENT_TEAM = 46YHF3B432;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenRecorderSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
